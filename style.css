@@ -1,0 +1,143 @@
+.main-content{
+    display: grid;
+    min-height: 1000px;
+    margin: 20px auto;
+    grid-template-columns: 300px 700px;
+    width: 90%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.left-section{
+    background-color: black;
+    color: white;
+}
+.left-content{
+    padding: 1rem;
+}
+.profile-image{
+    /* width: 182.42px;
+    height: 128.8px; */
+    display: block;
+    margin: auto;
+    border: 5px solid white;
+    width: 60%;
+    border-radius: 30%;
+}
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.8rem;
+    word-spacing: 0.02px;
+    margin: 0;
+}
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    margin: 0;
+}
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+}
+.social-media{
+    display: inline-flex;
+    align-items: center;
+    margin-left: 2.5rem;
+    margin-top: 0.5rem;
+    /* background-color: red; */
+}
+.personal-details{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.3rem;
+}
+
+.social-media .icon{
+    width: 30%;
+    height: 100%;
+    list-style-type: none;
+}
+.personal-details .icon:first-child{
+    list-style-image: url("https://img.icons8.com/fluency/20/000000/email-open.png");
+    margin-bottom: 0.3rem;
+}
+
+.personal-details .icon:nth-child(2){
+    list-style-image: url("https://img.icons8.com/emoji/20/000000/mobile-phone.png");
+    margin-bottom: 0.3rem;
+}
+.personal-details .icon:last-child{
+    list-style-image: url("https://img.icons8.com/ultraviolet/20/000000/address.png");
+}
+
+.skills{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem 0.5rem;
+}
+.skill-name{
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+.skill-name h3{
+    margin-bottom: 0;
+}
+.progress-bar{
+    border: 1px solid white;
+    height: 4px;
+    width: 90%;
+    background-color: wheat;
+    border-radius: 4px;
+}
+.right-section{
+    background-color:lightgray
+}
+
+.right-main-content{
+    padding: 2rem 3rem;
+}
+.right-title{
+    font-size:1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+    margin: 0;
+}
+.inner-right-title{
+    font-size:0.8rem ;
+    margin:0;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
+    letter-spacing: 1px;
+
+}
+.inner-span{
+    float: right;
+    padding-top: 0;
+}
+.para{
+    margin: 0;
+    padding: 0.5rem;
+    text-align: justify;
+}
+.inner-para{
+    width: 70%;
+}
+.year{
+    padding-right: 1rem;
+    padding-top: 0.2rem;
+    font-size:0.7rem;
+}
+
+@media screen and (max-width:673px) {
+    .main-content{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
